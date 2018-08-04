@@ -1,12 +1,12 @@
 defmodule Protobuf.Mixfile do
   use Mix.Project
 
-  @version "0.4.1"
+  @version "0.5.0"
 
   def project do
-    [app: :protobuf,
+    [app: :protobuf_ex,
      version: @version,
-     elixir: "~> 1.4",
+     elixir: "~> 1.7",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
@@ -54,9 +54,9 @@ defmodule Protobuf.Mixfile do
   end
 
   defp package do
-    [maintainers: ["Tony Han"],
+    [maintainers: ["Geoffrey Hayes", "Tony Han"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/tony612/protobuf-elixir"},
+     links: %{"GitHub" => "https://github.com/hayesgm/protobuf-ex"},
      files: ~w(mix.exs README.md lib config LICENSE priv/templates)]
   end
 
