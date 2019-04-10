@@ -21,7 +21,7 @@ by adding `protobuf` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:protobuf_ex, "~> 0.5.0"}]
+  [{:protobuf_ex, "~> 0.6.0"}]
 end
 ```
 

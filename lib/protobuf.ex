@@ -16,6 +16,8 @@ defmodule Protobuf do
       def from_params(params \\ %{}) do
         Protobuf.Builder.from_params(__MODULE__, params)
       end
+
+      @derive Jason.Encoder
     end
   end
 
